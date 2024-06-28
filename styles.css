@@ -111,6 +111,13 @@ section {
     margin-left: 10px; /* Adds space between CV and Attachments */
 }
 
+/* Projects and Education section */
+#education,
+#projects {
+    width: 48%; /* Set width for each section */
+    flex: 1; /* Take up remaining space */
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -131,7 +138,9 @@ footer {
         margin-bottom: 1rem;
     }
 
-    .cv, .attachments {
+    .cv, .attachments,
+    #education,
+    #projects {
         width: 100%; /* Full width on smaller screens */
         margin-right: 0;
         margin-left: 0;
