@@ -1,27 +1,19 @@
 /* Reset and basic styles */
-html, body {
-    height: 100%; /* Ensure the body and html take up full height */
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
     background: url('assets/background.jpeg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
 }
 
-header, footer {
+header {
     background: rgba(51, 51, 51, 0.8); /* semi-transparent background */
     color: #fff;
-    text-align: center;
     padding: 1rem 0;
-    width: 100%; /* Make sure header and footer are full width */
-    position: relative; /* Position relative to extend background */
-    z-index: 1; /* Ensure header and footer are on top */
+    text-align: center;
 }
 
 nav a {
@@ -54,7 +46,7 @@ section {
 /* Adjustments for the layout */
 .about-content {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    align-items: center;
 }
 
 .profile-photo-container {
@@ -64,37 +56,6 @@ section {
 
 .about-text {
     flex: 1; /* Take remaining space */
-    margin-right: 2rem; /* Add space between text and divider */
-}
-
-.divider {
-    width: 2px;
-    background-color: #ccc;
-    height: auto;
-    align-self: stretch; /* Make the divider stretch to the height of the container */
-}
-
-.contact-info {
-    flex: 0 0 auto; /* Prevent flex-grow */
-    max-width: 300px; /* Adjust width as needed */
-    background: rgba(255, 255, 255, 0.8);
-    padding: 1rem;
-    border-radius: 8px;
-    margin-left: 2rem;
-    text-align: center;
-}
-
-.contact-info p {
-    margin: 0.5rem 0;
-}
-
-.contact-info a {
-    color: #333;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
 }
 
 .education-entry {
@@ -170,22 +131,15 @@ footer {
         margin-bottom: 1rem;
     }
 
-    .about-text {
-        margin-right: 0; /* Remove margin on smaller screens */
-    }
-
-    .divider {
-        display: none; /* Hide the divider on smaller screens */
-    }
-
-    .contact-info {
-        margin-left: 0; /* Remove margin on smaller screens */
-        max-width: 100%; /* Full width on smaller screens */
-    }
-
     .cv, .attachments {
         width: 100%; /* Full width on smaller screens */
         margin-right: 0;
         margin-left: 0;
     }
+}
+
+/* Custom styles for Font Awesome icons */
+.contact-info i {
+    font-size: 24px; /* Adjust icon size */
+    margin-right: 5px; /* Adjust spacing between icon and text */
 }
