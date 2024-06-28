@@ -21,13 +21,6 @@ nav a {
     margin: 0 1rem;
 }
 
-.navbar-image {
-    width: 40px; /* Adjust width as needed */
-    height: 40px; /* Adjust height as needed */
-    margin-right: 10px; /* Optional: Add margin for spacing */
-    border-radius: 50%; /* Optional: Round corners for a circular image */
-}
-
 /* Example additional styles for sections */
 section {
     padding: 20px;
@@ -42,13 +35,6 @@ section {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
-}
-
-section {
-    padding: 2rem;
-    margin: 1rem 0;
-    background: rgba(255, 255, 255, 0.9); /* semi-transparent background */
-    border-radius: 8px;
 }
 
 #cv-attachments {
