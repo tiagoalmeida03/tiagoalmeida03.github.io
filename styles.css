@@ -92,6 +92,11 @@ section {
     flex: 1;
 }
 
+.cv-attachments-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .cv, .attachments {
     width: 48%;
 }
