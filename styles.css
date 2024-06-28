@@ -3,6 +3,7 @@ html, body {
     height: 100%; /* Ensure the body and html take up full height */
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 body {
@@ -13,11 +14,14 @@ body {
     color: #333;
 }
 
-header {
+header, footer {
     background: rgba(51, 51, 51, 0.8); /* semi-transparent background */
     color: #fff;
-    padding: 1rem 0;
     text-align: center;
+    padding: 1rem 0;
+    width: 100%; /* Make sure header and footer are full width */
+    position: relative; /* Position relative to extend background */
+    z-index: 1; /* Ensure header and footer are on top */
 }
 
 nav a {
@@ -113,14 +117,6 @@ section {
 
 .attachments {
     margin-left: 10px; /* Adds space between CV and Attachments */
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem 0;
-    background: rgba(51, 51, 51, 0.8); /* semi-transparent background */
-    color: #fff;
 }
 
 /* Media query for smaller screens */
