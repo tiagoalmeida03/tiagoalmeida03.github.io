@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -36,10 +35,18 @@ section {
     border-radius: 8px;
 }
 
+#cv-attachments {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv, .attachments {
+    width: 48%;
+}
+
 footer {
     text-align: center;
     padding: 1rem 0;
     background: #333;
     color: #fff;
 }
-
