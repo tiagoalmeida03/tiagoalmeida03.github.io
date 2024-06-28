@@ -50,17 +50,13 @@ section {
     max-width: 150px; /* Adjust as needed */
     max-height: 150px; /* Adjust as needed */
     overflow: hidden;
+    margin-right: 2rem; /* Spacing between photo and text */
 }
 
 /* Adjustments for the layout */
 .about-content {
     display: flex;
     align-items: flex-start; /* Align items to the top */
-}
-
-.profile-photo-container {
-    flex: 0 0 auto; /* Prevent flex-grow */
-    margin-right: 2rem; /* Spacing between photo and text */
 }
 
 .about-text {
@@ -75,7 +71,6 @@ section {
 }
 
 .contact-info {
-    flex: 0 0 auto; /* Prevent flex-grow */
     max-width: 300px; /* Adjust width as needed */
     background: rgba(255, 255, 255, 0.8);
     padding: 1rem;
