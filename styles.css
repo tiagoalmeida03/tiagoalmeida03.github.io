@@ -47,6 +47,7 @@ section {
 
 /* Ensure the photo doesn't exceed its container's height */
 .profile-photo-container {
+    max-width: 150px; /* Adjust as needed */
     max-height: 150px; /* Adjust as needed */
     overflow: hidden;
 }
@@ -64,7 +65,6 @@ section {
 
 .about-text {
     flex: 1; /* Take remaining space */
-    margin-right: 2rem; /* Add space between text and divider */
 }
 
 .divider {
