@@ -95,10 +95,20 @@ section {
 .cv-attachments-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
 .cv, .attachments {
-    width: 48%;
+    width: calc(50% - 10px); /* Adjusted width to accommodate spacing */
+    margin-bottom: 20px; /* Adds space between sections */
+}
+
+.cv {
+    margin-right: 10px; /* Adds space between CV and Attachments */
+}
+
+.attachments {
+    margin-left: 10px; /* Adds space between CV and Attachments */
 }
 
 /* Footer */
@@ -119,5 +129,11 @@ footer {
     .profile-photo-container {
         margin-right: 0;
         margin-bottom: 1rem;
+    }
+
+    .cv, .attachments {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0;
+        margin-left: 0;
     }
 }
