@@ -21,6 +21,21 @@ nav a {
     margin: 0 1rem;
 }
 
+.navbar-image {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    margin-right: 10px; /* Optional: Add margin for spacing */
+    border-radius: 50%; /* Optional: Round corners for a circular image */
+}
+
+/* Example additional styles for sections */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
 .profile-photo {
     width: 150px;
     height: 150px;
