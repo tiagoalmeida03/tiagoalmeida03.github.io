@@ -47,8 +47,8 @@ section {
 
 /* Ensure the photo doesn't exceed its container's height */
 .profile-photo-container {
-    max-width: 100px; /* Adjust as needed */
-    max-height: 100px; /* Adjust as needed */
+    max-width: 300px; /* Adjust as needed */
+    max-height: 300px; /* Adjust as needed */
     overflow: hidden;
     margin-right: 2rem; /* Spacing between photo and text */
 }
