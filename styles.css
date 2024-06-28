@@ -44,6 +44,40 @@ section {
     width: 48%;
 }
 
+.education-entry {
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 0;
+}
+
+.education-timeline {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.education-timeline .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.education-timeline .timeline-line {
+    width: 2px;
+    height: 100%;
+    background-color: #4CAF50;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+.education-content {
+    flex: 1;
+}
+
 footer {
     text-align: center;
     padding: 1rem 0;
