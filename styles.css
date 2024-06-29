@@ -24,10 +24,16 @@ header, footer {
     z-index: 1; /* Ensure header and footer are on top */
 }
 
+nav {
+    overflow-x: auto; /* Allow horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of nav items */
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
+    display: inline-block; /* Ensure nav items are inline */
 }
 
 /* Example additional styles for sections */
@@ -163,6 +169,14 @@ footer {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem 0; /* Reduce padding for smaller screens */
+    }
+
+    nav a {
+        margin: 0 0.5rem; /* Reduce margin for smaller screens */
+    }
+
     .about-content {
         flex-direction: column;
         align-items: center;
