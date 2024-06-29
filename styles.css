@@ -50,12 +50,15 @@ section {
     max-width: 150px; /* Adjust as needed */
     max-height: 150px; /* Adjust as needed */
     overflow: hidden;
+    margin-top: 20px; /* Add this line to move the photo down */
+    margin-bottom: 20px; /* Optional: Add this line to add space below the photo */
 }
 
 /* Adjustments for the layout */
 .about-content {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    align-items: center; /* Center the items vertically */
+    justify-content: center; /* Center the items horizontally */
 }
 
 .profile-photo-container {
