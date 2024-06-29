@@ -74,7 +74,6 @@ section {
 
 .about-text {
     flex: 1; /* Take remaining space */
-    padding-right: 2rem; /* Add padding to the right for spacing */
 }
 
 .divider {
@@ -143,16 +142,62 @@ section {
 }
 
 .cv, .attachments {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    width: 48%;
-    box-sizing: border-box; /* Ensure padding is included in width */
-    margin-bottom: 1rem;
+    width: calc(50% - 10px); /* Adjusted width to accommodate spacing */
+    margin-bottom: 20px; /* Adds space between sections */
 }
 
+.cv {
+    margin-right: 10px; /* Adds space between CV and Attachments */
+}
+
+.attachments {
+    margin-left: 10px; /* Adds space between CV and Attachments */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(51, 51, 51, 0.8); /* semi-transparent background */
+    color: #fff;
+}
+
+/* Media query for smaller screens */
 @media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem 0; /* Reduce padding for smaller screens */
+    }
+
+    nav a {
+        margin: 0 0.5rem; /* Reduce margin for smaller screens */
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo-container {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .about-text {
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
+
+    .divider {
+        display: none; /* Hide the divider on smaller screens */
+    }
+
+    .contact-info {
+        margin-left: 0; /* Remove margin on smaller screens */
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
     .cv, .attachments {
         width: 100%; /* Full width on smaller screens */
+        margin-right: 0;
+        margin-left: 0;
     }
 }
