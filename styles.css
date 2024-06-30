@@ -40,7 +40,7 @@ nav a {
 section {
     padding: 2rem;
     margin: 1rem 0;
-    background: rgba(255, 255, 255, 0.8); /* Make sections semi-transparent */
+    background: #fff;
     border-radius: 8px;
 }
 
@@ -81,7 +81,7 @@ section {
     background-color: #ccc;
     height: auto;
     align-self: stretch; /* Make the divider stretch to the height of the container */
-    margin-left: 2rem; /* Space between the divider and the text */
+    
 }
 
 .contact-info {
