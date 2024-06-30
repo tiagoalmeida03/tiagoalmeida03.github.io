@@ -81,7 +81,7 @@ section {
     background-color: #ccc;
     height: auto;
     align-self: stretch; /* Make the divider stretch to the height of the container */
-    margin-left: 2rem; /* Space between the divider - text */
+    margin-right: 2rem; /* Spacing between divider and the text */
 }
 
 .contact-info {
