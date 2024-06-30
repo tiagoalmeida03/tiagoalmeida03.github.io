@@ -109,6 +109,25 @@ section {
     text-decoration: underline;
 }
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-column {
+    flex: 1;
+    min-width: 50%; /* Ensure columns stack on smaller screens */
+}
+
+.project-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-column li {
+    margin-bottom: 0.5rem;
+}
+
 .education-entry {
     display: flex;
     align-items: flex-start;
