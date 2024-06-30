@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
     background: url('assets/background.jpeg') no-repeat center center fixed;
     background-size: cover;
+    background-attachment: fixed; /* Ensure the background stays fixed */
     color: #333;
 }
 
@@ -40,7 +41,7 @@ nav a {
 section {
     padding: 2rem;
     margin: 1rem 0;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8); /* Make sections semi-transparent */
     border-radius: 8px;
 }
 
