@@ -128,34 +128,41 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.education-timeline {
-    margin-right: 1.5rem; /* Adjusted for better spacing */
+/* Container for both education entries */
+.education-container {
+    display: flex;               /* Side-by-side layout */
+    justify-content: space-between; /* Space between the two columns */
+    margin: 2rem 0;              /* Spacing around the container */
+    flex-wrap: wrap;             /* Ensure entries stack on smaller screens */
 }
 
-.education-timeline .timeline-line {
-    width: 2px;
-    height: 100%;
-    background-color: #4CAF50;
-    position: absolute;
-    top: 0;
-    left: 10px; /* Moved the timeline closer to the content */
+/* Left and right entries */
+.education-entry-left,
+.education-entry-right {
+    flex: 0 0 48%;               /* Both columns take 48% of the width */
+    box-sizing: border-box;       /* Include padding and borders in width calculation */
+    margin-bottom: 2rem;          /* Space between entries on smaller screens */
 }
 
+/* Ensuring each entry content has a consistent layout */
 .education-content {
-    flex: 1;
     text-align: left;
-    padding-left: 20px; /* Adds spacing from the timeline */
+    padding: 1rem;
+    background: #fff;             /* White background for the content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-.education-entry {
-    display: flex;
-    align-items: flex-start;
-    margin: 1.5rem 0; /* Increase margin between entries */
-}
+/* Flex adjustments for smaller screens (mobile responsiveness) */
+@media (max-width: 768px) {
+    .education-entry-left,
+    .education-entry-right {
+        flex: 0 0 100%;          /* Take full width on smaller screens */
+    }
 
-.education-content p {
-    margin: 0; /* Removes excess margins */
-    line-height: 1.5rem; /* Improve readability */
+    .education-container {
+        flex-direction: column;   /* Stack entries vertically on smaller screens */
+    }
 }
 
 
