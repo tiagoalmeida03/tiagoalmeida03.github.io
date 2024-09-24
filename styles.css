@@ -128,20 +128,8 @@ section {
     margin-bottom: 0.5rem;
 }
 
-.education-entry {
-    display: flex;
-    align-items: flex-start;
-    margin: 1rem 0;
-}
-
 .education-timeline {
-    position: relative;
-    margin-right: 1rem;
-}
-
-/* Remove or hide the green dot */
-.education-timeline .dot {
-    display: none; /* Hide the dot */
+    margin-right: 1.5rem; /* Adjusted for better spacing */
 }
 
 .education-timeline .timeline-line {
@@ -150,13 +138,26 @@ section {
     background-color: #4CAF50;
     position: absolute;
     top: 0;
-    left: 5px;
+    left: 10px; /* Moved the timeline closer to the content */
 }
 
 .education-content {
     flex: 1;
-    text-align: justify; /* Justify text in the education section */
+    text-align: left;
+    padding-left: 20px; /* Adds spacing from the timeline */
 }
+
+.education-entry {
+    display: flex;
+    align-items: flex-start;
+    margin: 1.5rem 0; /* Increase margin between entries */
+}
+
+.education-content p {
+    margin: 0; /* Removes excess margins */
+    line-height: 1.5rem; /* Improve readability */
+}
+
 
 .cv-attachments-container {
     display: flex;
