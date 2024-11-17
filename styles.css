@@ -40,6 +40,13 @@ nav a {
     display: inline-block;
 }
 
+/* Ensure the link remains white when visited or active */
+nav a:visited,
+nav a:active,
+nav a:hover {
+    color: #fff;
+}
+
 /* Styling for sections */
 section {
     padding: 2rem;
