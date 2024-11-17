@@ -186,10 +186,10 @@ section {
     text-align: justify; /* Justify text in the attachments section */
 }
 
-/* Ensure links remain black on hover and after being clicked */
+/* Ensure links remain black and have an underline */
 a, a:visited, a:hover, a:active {
     color: #333; /* Keep links black */
-    text-decoration: none; /* Remove underline */
+    text-decoration: underline; /* Add underline */
 }
 
 
