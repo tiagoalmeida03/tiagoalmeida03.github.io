@@ -1,10 +1,10 @@
 /* Reset and basic styles */
 html, body {
-    height: 100%; /* Ensure the body and html take up full height */
+    height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    background-color: #333; /* Set a background color */
+    overflow-x: hidden;
+    background-color: #333;
 }
 
 body {
@@ -16,34 +16,37 @@ body {
 }
 
 header, footer {
-    background: rgba(51, 51, 51, 0.8); /* semi-transparent background */
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    width: 100%; /* Make sure header and footer are full width */
-    position: relative; /* Position relative to extend background */
-    z-index: 1; /* Ensure header and footer are on top */
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
+/* Center the navigation bar */
 nav {
-    overflow-x: auto; /* Allow horizontal scrolling */
-    white-space: nowrap; /* Prevent wrapping of nav items */
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
-    display: inline-block; /* Ensure nav items are inline */
+    display: inline-block;
 }
 
-/* Example additional styles for sections */
+/* Styling for sections */
 section {
     padding: 2rem;
     margin: 1rem 0;
     background: #fff;
     border-radius: 8px;
-    text-align: justify; /* Justify text in sections */
+    text-align: justify;
 }
 
 .profile-photo {
@@ -53,43 +56,41 @@ section {
     display: block;
 }
 
-/* Ensure the photo doesn't exceed its container's height */
 .profile-photo-container {
-    max-width: 150px; /* Adjust as needed */
-    max-height: 150px; /* Adjust as needed */
+    max-width: 150px;
+    max-height: 150px;
     overflow: hidden;
-    margin-top: 20px; /* Add this line to move the photo down */
-    margin-bottom: 20px; /* Optional: Add this line to add space below the photo */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-/* Adjustments for the layout */
 .about-content {
     display: flex;
-    align-items: center; /* Center the items vertically */
-    justify-content: center; /* Center the items horizontally */
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-photo-container {
-    flex: 0 0 auto; /* Prevent flex-grow */
-    margin-right: 2rem; /* Spacing between photo and text */
+    flex: 0 0 auto;
+    margin-right: 2rem;
 }
 
 .about-text {
-    flex: 1; /* Take remaining space */
-    text-align: justify; /* Justify text in the about section */
+    flex: 1;
+    text-align: justify;
 }
 
 .divider {
     width: 2px;
     background-color: #ccc;
     height: auto;
-    align-self: stretch; /* Make the divider stretch to the height of the container */
-    margin-left: 2rem; /* Spacing between divider and the text */
+    align-self: stretch;
+    margin-left: 2rem;
 }
 
 .contact-info {
-    flex: 0 0 auto; /* Prevent flex-grow */
-    max-width: 300px; /* Adjust width as needed */
+    flex: 0 0 auto;
+    max-width: 300px;
     background: rgba(255, 255, 255, 0.8);
     padding: 1rem;
     border-radius: 8px;
@@ -128,87 +129,75 @@ section {
     margin-bottom: 0.5rem;
 }
 
-/* Container for both education entries */
 .education-container {
-    display: flex;               /* Side-by-side layout */
-    justify-content: space-between; /* Space between the two columns */
-    margin: 2rem 0;              /* Spacing around the container */
-    flex-wrap: wrap;             /* Ensure entries stack on smaller screens */
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    flex-wrap: wrap;
 }
 
-/* Left and right entries */
 .education-entry-left,
 .education-entry-right {
-    flex: 0 0 48%;               /* Both columns take 48% of the width */
-    box-sizing: border-box;       /* Include padding and borders in width calculation */
-    margin-bottom: 2rem;          /* Space between entries on smaller screens */
+    flex: 0 0 48%;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
 }
 
-/* Ensuring each entry content has a consistent layout */
 .education-content {
     text-align: left;
     padding: 1rem;
-    background: #fff;             /* White background for the content */
+    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-/* Flex adjustments for smaller screens (mobile responsiveness) */
-@media (max-width: 768px) {
-    .education-entry-left,
-    .education-entry-right {
-        flex: 0 0 100%;          /* Take full width on smaller screens */
-    }
-
-    .education-container {
-        flex-direction: column;   /* Stack entries vertically on smaller screens */
-    }
-}
-
 
 .cv-attachments-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .cv, .attachments {
-    width: calc(50% - 10px); /* Adjusted width to accommodate spacing */
-    margin-bottom: 20px; /* Adds space between sections */
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
 }
 
 .cv {
-    margin-right: 10px; /* Adds space between CV and Attachments */
+    margin-right: 10px;
 }
 
 .attachments {
-    margin-left: 10px; /* Adds space between CV and Attachments */
-    text-align: justify; /* Justify text in the attachments section */
+    margin-left: 10px;
+    text-align: justify;
 }
 
-/* Ensure links remain black and have an underline */
-a, a:visited, a:hover, a:active {
-    color: #333; /* Keep links black */
-    text-decoration: underline; /* Add underline */
+/* Ensure links remain styled correctly */
+a, a:visited {
+    color: #333;
+    text-decoration: underline;
 }
 
+/* Résumé link specific styling */
+.cv a, .attachments a {
+    color: #007BFF; /* Make résumé links blue for better visibility */
+    text-decoration: underline;
+}
 
-/* Footer */
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: rgba(51, 51, 51, 0.8); /* semi-transparent background */
+    background: rgba(51, 51, 51, 0.8);
     color: #fff;
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     header, footer {
-        padding: 0.5rem 0; /* Reduce padding for smaller screens */
+        padding: 0.5rem 0;
     }
 
     nav a {
-        margin: 0 0.5rem; /* Reduce margin for smaller screens */
+        margin: 0 0.5rem;
     }
 
     .about-content {
@@ -222,20 +211,20 @@ footer {
     }
 
     .about-text {
-        margin-right: 0; /* Remove margin on smaller screens */
+        margin-right: 0;
     }
 
     .divider {
-        display: none; /* Hide the divider on smaller screens */
+        display: none;
     }
 
     .contact-info {
-        margin-left: 0; /* Remove margin on smaller screens */
-        max-width: 100%; /* Full width on smaller screens */
+        margin-left: 0;
+        max-width: 100%;
     }
 
     .cv, .attachments {
-        width: 100%; /* Full width on smaller screens */
+        width: 100%;
         margin-right: 0;
         margin-left: 0;
     }
